@@ -775,7 +775,7 @@ class PolicyWorkerBase(Worker):
 
         # 3.6 bits per significant gradient update
         # source: http://arxiv.org/abs/2505.24832
-        return (3.6 * significant_count) / (8 * 1024 * 1024) #conversion bits -> megabytes.
+        return (3.6 * significant_count) / (8 * 1024 * 1024)  # conversion bits -> megabytes.
 
     def _compute_update_diversity(self) -> list[float]:
         """
